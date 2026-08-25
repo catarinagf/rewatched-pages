@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rewatched — Legal</title>
+<style>
+  :root {
+    --ink900: #0E0E10;
+    --ink700: #1E1E21;
+    --ink600: #2A2A2E;
+    --slate400: #9A9AA2;
+    --slate200: #D4D4D8;
+    --mist100: #F5F5F6;
+    --coral500: #FF6B5B;
+    --coral400: #FF8A76;
+    --amber400: #FFC069;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ink900);
+    color: var(--mist100);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap {
+    max-width: 420px;
+    padding: 24px;
+    text-align: center;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .brand-mark {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--coral500), var(--amber400));
+  }
+  .brand-name { font-weight: 700; font-size: 18px; }
+  h1 { font-size: 20px; margin: 0 0 20px; color: var(--slate200); font-weight: 500; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { margin-bottom: 12px; }
+  a {
+    display: block;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background: var(--ink700);
+    border: 1px solid var(--ink600);
+    color: var(--mist100);
+    text-decoration: none;
+    font-size: 15px;
+  }
+  a:hover { border-color: var(--coral400); color: var(--coral400); }
+  @media (prefers-color-scheme: light) {
+    body { background: #FAF8F4; color: #1C1A16; }
+    h1 { color: #44403A; }
+    a { background: #FFFDF9; border-color: #E6E0D4; color: #1C1A16; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <div class="brand-mark"></div>
+      <div class="brand-name">Rewatched</div>
+    </div>
+    <h1>Legal documents</h1>
+    <ul>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms-of-service.html">Terms of Service</a></li>
+    </ul>
+  </div>
+</body>
+</html>
