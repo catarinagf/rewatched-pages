@@ -44,8 +44,6 @@
   .brand-mark {
     width: 28px;
     height: 28px;
-    border-radius: 8px;
-    background: linear-gradient(135deg, var(--coral500), var(--amber400));
     flex-shrink: 0;
   }
   .brand-name {
@@ -116,7 +114,28 @@
 <div class="wrap">
   <header>
     <div class="brand">
-      <div class="brand-mark"></div>
+      <svg class="brand-mark" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rewatched logo">
+        <defs>
+          <linearGradient id="bg-grad" x1="31.23" y1="31.23" x2="480.77" y2="480.77" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#3A3D40"/>
+            <stop offset="0.5" stop-color="#232527"/>
+            <stop offset="1" stop-color="#17181A"/>
+          </linearGradient>
+          <linearGradient id="wing-grad" x1="-138.24" y1="781.79" x2="666.54" y2="-22.98" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#FF9269"/>
+            <stop offset="1" stop-color="#C2472A"/>
+          </linearGradient>
+          <linearGradient id="ring-grad" x1="133" y1="203.55" x2="437" y2="203.55" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#FF9269"/>
+            <stop offset="0.3" stop-color="#F07F59"/>
+            <stop offset="0.89" stop-color="#C95031"/>
+            <stop offset="1" stop-color="#C2472A"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#bg-grad)" d="M10.24,81.92a71.68,71.68 0,0 1,71.68 -71.68h348.16a71.68,71.68 0,0 1,71.68 71.68v348.16a71.68,71.68 0,0 1,-71.68 71.68h-348.16a71.68,71.68 0,0 1,-71.68 -71.68z"/>
+        <path fill="url(#wing-grad)" d="M369.43,278.78l-12.7,12.71c-95.23,69.94,-133.32,158.94,-139.67,197.09,-0.75,4.5,-1.76,8.91,-3.02,13.18h-99.07c0.12,-13.91,4.35,-29.44,13.21,-44.97,57.14,-101.72,165.07,-133.51,241.25,-178.01z"/>
+        <path fill="none" stroke="url(#ring-grad)" stroke-width="64" stroke-miterlimit="10.24" d="M165,149c0,-30.38 24.62,-55 55,-55h130c30.38,0 55,24.62 55,55v109.09c0,30.38 -24.62,55 -55,55h-130c-30.38,0 -55,-24.62 -55,-55z"/>
+      </svg>
       <div class="brand-name">Rewatched</div>
     </div>
     <h1>Terms of Service</h1>
