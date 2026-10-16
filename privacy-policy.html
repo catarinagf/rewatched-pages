@@ -147,7 +147,7 @@
       <div class="brand-name">Rewatched</div>
     </div>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: August 25, 2026</p>
+    <p class="meta">Effective date: October 16, 2026</p>
   </header>
 
   <p>
@@ -158,7 +158,8 @@
 
   <h2>What information we collect</h2>
 
-  <p>Rewatched collects only what's needed to run the app's tracking and social features:</p>
+  <p>Rewatched collects only what's needed to run the app's tracking, social and subscription
+  features, and to show ads on free accounts:</p>
 
   <table>
     <tr><th>Category</th><th>Examples</th><th>Why we collect it</th></tr>
@@ -179,8 +180,18 @@
     </tr>
     <tr>
       <td>Social activity</td>
-      <td>Episode/show comments, comment upvotes, emotion votes, favorite-character votes, star ratings, who you follow</td>
+      <td>Episode/show comments, comment upvotes, emotion votes, favorite-character votes, star ratings, pace and complexity votes on shows, who you follow</td>
       <td>The social features described in the app</td>
+    </tr>
+    <tr>
+      <td>Lists and notes</td>
+      <td>Show and episode lists you create; private notes you write on episodes</td>
+      <td>Lists can be public or private, as you choose. Notes are private: only you can read them</td>
+    </tr>
+    <tr>
+      <td>Subscription status</td>
+      <td>Whether your account has Premium, the Google Play purchase it comes from (a purchase token, the plan, its state and renewal date)</td>
+      <td>To give Premium to the account that bought it, and to end it when the subscription ends or is refunded</td>
     </tr>
     <tr>
       <td>Imported watch history</td>
@@ -192,11 +203,17 @@
       <td>Crash reports, app performance data, device model/OS version</td>
       <td>Finding and fixing bugs (see "Crash reporting & analytics" below)</td>
     </tr>
+    <tr>
+      <td>Advertising data (free accounts only)</td>
+      <td>Your device's advertising ID, approximate location derived from your IP address, and how you interact with ads — collected by Google AdMob, not by us</td>
+      <td>Showing ads on free accounts (see "Ads" below). Premium accounts never load the ads software at all</td>
+    </tr>
   </table>
 
   <p>
-    We do not collect payment information directly — Rewatched's Premium tier (when enabled) is
-    billed entirely through Google Play's own billing system, which has its own privacy policy.
+    We never see or store your payment details. Premium is bought and billed entirely through
+    Google Play; we only receive the purchase itself, which we confirm with Google and record
+    against your account.
   </p>
 
   <h2>How your information is used</h2>
@@ -205,8 +222,14 @@
     <li>To show your public profile, comments, votes, and ratings to other users, as intended by the app's social features.</li>
     <li>To send you in-app notifications you've enabled (e.g. "an episode is airing soon") — these are generated and shown entirely on your own device, not through a push-notification or email service.</li>
     <li>To identify and fix bugs and crashes.</li>
+    <li>To give Premium to the account that bought it, and to enforce the free tier's limits (3 lists, 20 notes) on accounts without it.</li>
+    <li>To show ads on free accounts.</li>
   </ul>
-  <p>We do not sell your personal information, and we do not use it for targeted advertising profiles.</p>
+  <p>
+    We do not sell your personal information. We don't build advertising profiles ourselves and
+    never pass your account information, watch history, lists, notes or social activity to
+    advertisers. Ads are chosen by Google AdMob, as described under "Ads" below.
+  </p>
 
   <h2>Who we share information with</h2>
 
@@ -227,6 +250,14 @@
       <td>Crash and error reporting, and basic app-usage analytics — see below.</td>
     </tr>
     <tr>
+      <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play</a></td>
+      <td>Selling and billing the Premium subscription. Google tells us that a purchase was made and its state (active, cancelled, refunded); we never receive your payment details.</td>
+    </tr>
+    <tr>
+      <td><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google AdMob</a></td>
+      <td>Showing ads on free accounts — see "Ads" below.</td>
+    </tr>
+    <tr>
       <td><a href="https://www.tvmaze.com/api" target="_blank" rel="noopener">TVMaze</a></td>
       <td>Public show/episode metadata (titles, air dates, images) — no personal account information is sent to TVMaze.</td>
     </tr>
@@ -245,12 +276,28 @@
     processed by Google under its own privacy policy, linked above.
   </p>
 
+  <h3>Ads</h3>
+  <p>
+    Free accounts see a few ads inside the app, served by Google AdMob. Premium accounts see none,
+    and on a Premium account the ads software isn't even started.
+  </p>
+  <p>
+    AdMob uses your device's advertising ID and approximate location to choose and measure ads. If
+    you're in the European Economic Area, the UK or Switzerland, the app asks for your consent
+    before any ad is requested, using Google's consent form; you can change your choice at any
+    time in Settings → Ad privacy choices. You can also reset or delete your advertising ID in your
+    device's settings (Settings → Google → Ads, or Privacy → Ads, depending on the device). Ads are
+    limited to those suitable for teenagers. See
+    <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from apps that use its services</a>.
+  </p>
+
   <h2>Your data, your control</h2>
 
   <div class="card">
     <p><strong>Download your data.</strong> Settings → Download my data exports a JSON file
     containing every row associated with your account — your profile, tracked shows, watched
-    episodes, comments, votes, ratings, and follows — directly to a file on your device. Nothing
+    episodes, comments, votes, ratings, follows, lists, notes and subscription records — directly to
+    a file on your device. Nothing
     is emailed or held anywhere else; you choose where the file is saved.</p>
   </div>
 
@@ -258,23 +305,50 @@
     <p><strong>Delete your account.</strong> Settings → Delete account permanently deletes your
     account. This is not a soft delete: your account row is removed from our authentication
     system, which cascades through our database and permanently removes every piece of data tied
-    to your account — profile, avatar, watch history, comments, votes, ratings, and follows. This
-    action cannot be undone.</p>
+    to your account — profile, avatar, watch history, comments, votes, ratings, follows, lists,
+    notes and subscription records. This action cannot be undone. If you no longer have the app,
+    you can ask for your account to be deleted on
+    <a href="delete-account.html">this page</a>.</p>
   </div>
+
+  <div class="card">
+    <p><strong>Deleting your account doesn't cancel a Premium subscription.</strong> Google Play
+    bills your Google account, which isn't affected by deleting your Rewatched account. Cancel the
+    subscription in Google Play first (Play Store → profile icon → Payments &amp; subscriptions →
+    Subscriptions).</p>
+  </div>
+
+  <h2>Your rights</h2>
+  <p>
+    Wherever you live, you can access, download, correct and delete your data using the app's own
+    tools described above, or by writing to the address below. If you are in the European Union or
+    the UK, you also have the right to restrict or object to how your data is used, and to complain
+    to your data protection authority (in Portugal, the
+    <a href="https://www.cnpd.pt" target="_blank" rel="noopener">CNPD</a>).
+  </p>
+  <p>
+    We use your data to provide the service you signed up for (your account, tracking, social
+    features and Premium), because we have a legitimate interest in keeping the app working
+    (crash reports and basic analytics), and, for personalised ads in the EEA and UK, on the basis
+    of the consent you give in the consent form. Our service providers may process data outside
+    your country, including in the United States, under the safeguards described in their own
+    privacy policies.
+  </p>
 
   <h2>Data retention</h2>
   <p>
     We retain your account data for as long as your account exists. If you delete your account,
-    the data described above is deleted immediately and permanently, as described above. Backups
+    the data described above is deleted immediately and permanently, as described above. Google
+    keeps its own records of Play purchases, under its own policies. Backups
     of our database (if any exist at the time) age out and are overwritten in the ordinary course
     of our backend provider's retention schedule.
   </p>
 
   <h2>Children's privacy</h2>
   <p>
-    Rewatched is not directed at children under 13, and we do not knowingly collect information
-    from children under 13. If you believe a child has provided us with personal information,
-    contact us at the address below and we will delete it.
+    Rewatched is meant for people aged 16 and over, and isn't directed at children. We do not
+    knowingly collect information from anyone under 16. If you believe someone under 16 has
+    provided us with personal information, contact us at the address below and we will delete it.
   </p>
 
   <h2>Changes to this policy</h2>
